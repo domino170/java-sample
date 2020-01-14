@@ -6,7 +6,7 @@
 
 <p>The deployment via Jenkins is successful.</p>
 
-<p> Whole deployment pipeline test successful. </p>
+<p> Whole deployment pipeline test successful v2. </p>
 
 </body>
 </html>

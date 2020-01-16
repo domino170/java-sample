@@ -21,11 +21,6 @@ pipeline {
             }
         }
 
-        stage ('Deploy Build in Staging Area') {
-            steps {
-                build job : 'Deploy_StagingArea_Pipeline'
-            }
-        }
 
         stage ('Deploy Build in Production Environment') {
             steps {
@@ -33,7 +28,7 @@ pipeline {
                     input message : 'Approve PRODUCTION Deployment?'
                 }
 
-                build job : 'Deploy_Production_Pipeline'
+                build job : 'Prod_deployemnt'
             }
 
             post {

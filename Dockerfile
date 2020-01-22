@@ -4,4 +4,4 @@ ADD **/*.war /usr/local/tomcat/webapps
 
 EXPOSE 8090
 
-CMD ["catalina.bat","run"]
+CMD ["catalina.sh","run"]

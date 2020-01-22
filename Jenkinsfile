@@ -24,7 +24,7 @@ pipeline {
 
         stage ('Deploy do Docker') {
             steps {
-          sh 'docker build . -t tomcatsamplewebapp:${env.BUILD}'
+          sh "docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
             }
         }
     }

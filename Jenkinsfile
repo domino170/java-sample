@@ -24,7 +24,7 @@ pipeline {
 
         stage ('Deploy do Docker') {
             steps {
-          sh "docker build . -t javawebapp:${env.BUILD_ID}"
+          sh "docker build hello-world"
             }
         }
     }
